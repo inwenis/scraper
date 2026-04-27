@@ -1,0 +1,23 @@
+{
+  "name": "cme-crude-oil-scraper",
+  "version": "1.0.0",
+  "description": "Scrapes CME Crude Oil futures quotes into timestamped CSV and JSON files.",
+  "main": "scraper.js",
+  "scripts": {
+    "start": "node scraper.js --loop",
+    "scrape:once": "node scraper.js --once",
+    "scrape:loop": "node scraper.js --loop",
+    "install:browsers": "playwright install chromium",
+    "install:browsers:linux": "playwright install --with-deps chromium"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "playwright": "^1.59.1"
+  }
+}
