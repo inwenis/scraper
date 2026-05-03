@@ -7,6 +7,7 @@
     "start": "node scraper.js --loop",
     "scrape:once": "node scraper.js --once",
     "scrape:loop": "node scraper.js --loop",
+    "chart:3d": "node price-3d-chart.js",
     "install:browsers": "playwright install chromium",
     "install:browsers:linux": "playwright install --with-deps chromium"
   },

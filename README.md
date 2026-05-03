@@ -40,6 +40,26 @@ MONTH, OPTIONS, CHART, LAST, CHANGE, PRIOR SETTLE, OPEN, HIGH, LOW, VOLUME, UPDA
 
 JSON contains the same rows plus scrape metadata, source URL, API URL, schema version, delayed-data flag, and raw file path.
 
+## 3D Price Chart
+
+Build a quick Plotly HTML surface chart from processed JSON snapshots:
+
+```bash
+npm run chart:3d
+```
+
+Default output:
+
+```text
+data/price-3d-chart.html
+```
+
+Custom paths:
+
+```bash
+node price-3d-chart.js --input-dir=./data/processed --output=./data/price-3d-chart.html
+```
+
 ## Ubuntu Server
 
 Run these commands from the scraper repo, not from `/root/bouncer`.
